@@ -1,0 +1,135 @@
+html {
+	font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #85D4B7;
+}
+
+.container {
+	max-width: 450px;
+	height: auto;
+	background-color: #EFEFEF;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+	
+}
+
+.form__top {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem;
+	border-top: solid .4rem #26b885;
+	margin-bottom: 1rem;
+}
+
+.form__top h2 {
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+
+h2 span {
+	color: #6DCCAA;
+}
+
+.form__reg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn__form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.input, .btn__submit, .btn__reset{
+	background-color: #EFEFEF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C8C8C8 2px;
+	transition: all .5s;
+}
+
+.input:focus {
+	border-bottom: solid #85D4B7 .2rem;
+}
+
+.btn__submit, .btn__reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #6DCCAA;
+	color: white;
+}
+
+.btn__reset {
+	background-color: #85D4B7;
+}
+
+.btn__submit:hover {
+	background-color: #26b885;
+}
+
+.btn__reset:hover{
+	background-color: #26b885;
+}
+.datos1{
+	margin:0px auto 0px 0px;	
+	border:2px solid #d3d1d1;
+	height:30px;
+	overflow: hidden;
+	width: 230px;
+	position:relative;
+	
+}
+
+#regiones {
+	margin:0px auto 0px auto;	
+	border:2px solid #d3d1d1;
+	height:30px;
+	overflow: hidden;
+	width: 230px;
+	position:relative;
+}
+#comunas {
+	margin:0px auto 0px auto;	
+	border:2px solid #d3d1d1;
+	height:30px;
+	overflow: hidden;
+	width: 230px;
+	position:relative;
+}
+
+select {
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	height: 30px;
+	padding: 5px;
+	width: 250px;
+}
+ select:focus{ outline: none;}
+ 
+ .datos::after{
+	 content:"\025be";
+	 display:table-cell;
+	 padding-top:7px;
+	 text-align:center;
+	 width:30px;
+	 height:30px;
+	 background-color:#d9d9d9;
+	 position:absolute;
+	 top:0;
+	 right:0px;	
+	 pointer-events: none;
+ }
+ .designF{
+	 border: solid 2px #d9d9d9;
+	 background-color: #EFEFEF;
+	 width: 30%;
+ }

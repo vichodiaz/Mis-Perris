@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/validaciones.js"></script>
+	<title>Formulario</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__top">
+			<h2>Formulario <span>Contacto</span></h2>
+		</div>		
+		<form class="form__reg" action="">
+
+			<input class="input" type="email" placeholder="&#128231;  Correo Electrónico" required autofocus>
+			<input class="input" size="12" maxlength="12"  type="text" name="numpiso" onkeypress="return valida(event)" placeholder="&#127380;  RUN (EJ:12.345.678-K)" required>
+			<input class="input" type="text" name="numpiso" onkeypress="return validar(event)" placeholder="&#128100;  Nombre Completo" required>
+			<input class="input" type="datetime" placeholder="&#128198;  Fecha de Nacimiento" required disabled>
+			<input class="designF" type="date" max="2001-12-31"  name="Fecha"><br>
+			<input class="input" size="12" maxlength="12" minlength="9" type="text" name="numpiso" onkeypress="return validare(event)" placeholder="&#128222;  Teléfono" required>
+		<div>
+			<input class="input" type="text" placeholder="&#127758;  Region" required disabled>
+			<select id="regiones"></select>
+			<input class="input" type="text" placeholder="&#127758;  Ciudad" required disabled>
+			<select id="comunas"></select>
+		</div>
+		<input class="input" type="text" placeholder="&#127969;  Tipo de Vivienda" required disabled>
+		<div class="datos1">
+		<select name="Tipo de Vivienda">
+			<option value="0">Seleccione</option>
+			<option value="1">Casa con patio Grande</option>
+			<option value="2">Casas con patio pequeño</option>
+			<option value="3">Casa sin patio</option>
+			<option value="4">Departamento</option>
+		
+		</select>
+		</div>
+		<br>
+            <div class="btn__form">
+            	<input class="btn__submit" type="submit" value="REGISTRAR">
+            	<input class="btn__reset" type="reset" value="LIMPIAR">	
+            </div>
+		</form>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    }
+.no-padding{
+    padding: 0 !important;
+}
+header{
+    width: 100%;
+    height: auto;
+    background:#85D4B7;
+    padding: 25px;
+}
+
+header a{
+    font-size: 17px;
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+#hola{
+    background-color: #6DCCAA;
+    border: 1px solid #85D4B7;
+    padding: 30px;
+}
+#hola:hover{
+    background: 10px  #26b885;
+}
+
+
+
+/*Slider Diseno*/
+
+ul,ol{
+	list-style: none;
+}
+
+body{
+	font-family: Open sans;
+}
+
+.slideshow{
+	width: 100%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+    width: 100%;
+    min-height: 100px;
+}
+
+.slider .caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 50px;
+
+	display: flex;
+	flex-direction: column;
+	color: #000000;
+	z-index: 1;
+}
+.posicionT1{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    max-width: 160px;
+    white-space: initial;
+    text-align: center;
+}
+.posicionT2{
+    position: absolute;
+    top:20%;
+    left: 70%;
+    max-width: 180px;
+    white-space: initial;
+    text-align: center;
+}
+.posicionT3{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    max-width: 140px;
+    white-space: initial;
+    text-align: center;
+}
+
+.slider .caption h1{
+	font-size: 50px;
+}
+
+.slider .caption p{
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.pagination{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 15px;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+
+@media screen and (max-width: 900px){
+	.slider .caption p{
+        font-size: 15px;
+        
+    }
+
+	.slider .caption h1{
+		font-size: 35px;
+	}
+
+	.left, .right{
+		font-size: 30px;
+	}
+
+	.slider li img{
+		width: 100%;
+	}
+
+	.pagination{
+		display: none;
+	}
+}
+
+
+.separacionslider{
+    background-color: #6DCCAA;
+    width: 100%;
+    height: 25px;
+}
+
+/*Redes Sociales*/
+#redes [class^="fab fa-"],[class^="fas fa-"] {
+    display:inline-block;
+    color: #6DCCAA;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 10px 10px 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+    
+    
+}
+#redes{
+    background-color: #6DCCAA;
+    color: white;
+    padding: 15px;
+}
+.campaB{
+    position: relative;
+    top: 30px;
+    border: 2px solid #000000;
+    padding: 5px; 
+    list-style-type: upper-roman;
+    text-decoration: none;
+    color: #000000;
+}
+.campaB:hover{
+background-color:#858282;
+}
+
+#separacion1{
+    padding-top: 10px;
+    padding-right:30px; 
+}
+#separacion2{
+    padding-top:30px;
+    padding-left:30px;
+}
+
+#separacion1 a1{
+    font-family: Arial;
+    font-size: 28px;
+}
+#separacion1 a2{
+    font-family: Arial;
+    font-size: 16px;
+    color: #494949;
+}
+#separacion1 a3{
+    font-family: Arial;
+    font-size: 10px;
+    color: #494949;
+}
+#separacion2 a1{
+    font-family: Arial;
+    font-size: 28px;
+}
+#separacion2 a2{
+    font-family: Arial;
+    font-size: 16px;
+    color: #494949;
+}
+#separacion2 a3{
+    font-family: Arial;
+    font-size: 10px;
+    color: #494949;
+}
+
+#campaS{
+    width: 100%;
+    height: 30px;
+}
+
+#separacion1 img{
+    
+    width: 60%;
+    height: 50%;
+}
+#separacion2 img{
+    width: 60%;
+    height: 50%;
+    padding-bottom: 30px;
+}
+
+/*Galeria*/
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+.galeria{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li{
+    margin: 5px;
+}
+
+
+
+/*Estilo Modal*/
+.modal{
+    display: none;
+}
+
+
+.modal:target{
+    display: block;
+    position:fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+    padding: 20px;
+}
+
+.imagen{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a{
+   color: #fff;
+   font-size: 40px;
+   text-decoration: none;
+   margin: 0 10px; 
+}
+
+.imagen a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img{
+    width: 600px;
+    height: 500px;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.close{
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 3px;
+    border-radius: 50%;
+    line-height: 20px;
+}
+
+.collage{
+   background-color: #6DCCAA;
+   
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: #E6E6E6;
+    font-family: arial;
+    size: 12px;
+    padding: 10px 10px 40px 10px;
+}
+
+
+@media screen and (min-width: 800px){
+    #hola{
+    background-color: #85D4B7;
+    border: 1px solid #85D4B7;
+    padding: 30px;
+    }
+    #hola:hover{
+    background: 10px  #85D4B7;
+    }
+
+    .posicionT1{
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        max-width: 320px;
+        white-space: initial;
+        text-align: center;
+    }
+    .posicionT2{
+        position: absolute;
+        top:20%;
+        left: 70%;
+        max-width: 280px;
+        white-space: initial;
+        text-align: center;
+    }
+    .posicionT3{
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        max-width: 280px;
+        white-space: initial;
+        text-align: center;
+    }
+
+}
+h4{
+position: absolute;
+top: 65%;
+left: center;
+color:white;
+font-size: 32px;
+}
+
+
+
+
+
